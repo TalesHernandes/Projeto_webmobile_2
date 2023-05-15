@@ -10,18 +10,18 @@ export default function MapCards() {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error("Get failed");
+          throw new Error("Get falhou");
         }
       })
       .then((fetchedData) => {
         console.log(fetchedData);
-        setData(fetchedData); // Save fetched data to state variable
+        setData(fetchedData);
       })
       .catch((error) => {
         console.error(error);
-        alert("Get failed");
+        alert("Get falhou");
       });
-  }, []); // Fetch data once, when component mounts
+  }, []);
 
   const content = data.map((user) => (
     <EmployeeCard key={user.id} name={user.name} avatar={user.avatar} email={user.email} salary={user.salary} date={user.date} status={user.status}/>
