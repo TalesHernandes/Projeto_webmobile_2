@@ -90,6 +90,13 @@ header h1 {
   width: 108px;
 }
 
+.buttons a {
+  background-color: #515151;
+  border: none;
+  height: 45px;
+  width: 45px;
+}
+
 .buttons button {
   background-color: #515151;
   border: none;

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import Post from "./Post.js";
-import  Get from "./Get.js"
 
 export default function Add() {
   return (
@@ -37,7 +36,7 @@ export default function Add() {
         <input type="radio" id="inactive" name="status" value="Inactive" />
         <br />
 
-        <button type="submit" onClick={() => Get()}>Enviar</button>
+        <button type="submit" onClick={() => Post()}>Enviar</button>
       </form>
       <Link to="/home">Home</Link>
     </>

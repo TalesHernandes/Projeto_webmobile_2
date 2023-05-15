@@ -1,5 +1,6 @@
 import Header from "./Header"
-import EmployeeCard from "./EmployeeCard"
+import MapCards from "./MapCards"
+import { Link } from "react-router-dom"
 
 export default function Home () {
     return (
@@ -11,28 +12,12 @@ export default function Home () {
                         <input type="text" id="search" name="name" placeholder="Search"/>
                     </form>
                     <article className="buttons">
-                        <button className="addEmployee">
-                            <img />
-                        </button>
-                        <button className="filterEmployee">
-                            <img />
-                        </button>
+                        <Link to="/add" className="addEmployee"></Link>
+                        <Link className="filterEmployee">
+                        </Link>
                     </article>
                 </section>
-                <section className="employeeCards">
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                    <EmployeeCard />
-                </section>
+                <MapCards />
             </section>
         </>
     )
