@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom"
 import Post from "./Post.js";
 
-export default function Form() {
+export default function Add() {
   return (
     <>
       <form id="employee-form">
@@ -28,14 +29,16 @@ export default function Form() {
         <input type="date" id="date" name="date" />
         <br />
 
-        <label htmlFor="status">Status: </label>
-        <input type="radio" id="status" name="status" value="Active" />
-        <label htmlFor="Active">Ativo</label>
-        <input type="radio" id="status" name="status" value="Inactive" />
-        <label htmlFor="Inactive">Inativo</label>
+        <label>Status:</label>
+        <label htmlFor="active">Ativo</label>
+        <input type="radio" id="active" name="status" value="Active" />
+        <label htmlFor="inactive">Inativo</label>
+        <input type="radio" id="inactive" name="status" value="Inactive" />
         <br />
-        <button onClick={Post}>Enviar</button>
+
+        <button type="submit" onClick={() => Post()}>Enviar</button>
       </form>
+      <Link to="/home">Home</Link>
     </>
   );
 }
