@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Post from "./Post.js";
+import  Get from "./Get.js"
 
 export default function Add() {
   return (
