@@ -36,7 +36,7 @@ export default function Add() {
         <input type="radio" id="inactive" name="status" value="Inactive" />
         <br />
 
-        <button type="submit" onClick={() => Post()}>Enviar</button>
+        <button type="submit" onClick={() => Get()}>Enviar</button>
       </form>
       <Link to="/home">Home</Link>
     </>
