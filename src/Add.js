@@ -38,7 +38,7 @@ export default function Add() {
 
         <button type="submit" onClick={() => Post()}>Enviar</button>
       </form>
-      <Link to="/home">Home</Link>
+      <Link to="/">Home</Link>
     </>
   );
 }

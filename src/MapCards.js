@@ -15,6 +15,17 @@ export default function MapCards() {
       })
       .then((fetchedData) => {
         console.log(fetchedData);
+        
+        // Add surname attribute and update name attribute
+        fetchedData.forEach(user => {
+          const spaceIndex = user.name.indexOf(' ');
+          if (spaceIndex !== -1) {
+            user.surname = user.name.substring(spaceIndex + 1);
+            user.name = user.name.substring(0, spaceIndex);
+          }
+        });
+        
+        fetchedData.sort((a, b) => a.name.localeCompare(b.name));
         setData(fetchedData);
       })
       .catch((error) => {
@@ -24,7 +35,16 @@ export default function MapCards() {
   }, []);
 
   const content = data.map((user) => (
-    <EmployeeCard key={user.id} name={user.name} avatar={user.avatar} email={user.email} salary={user.salary} date={user.date} status={user.status}/>
+    <EmployeeCard 
+      _id={user._id} 
+      name={user.name} 
+      surname={user.surname} 
+      avatar={user.avatar} 
+      email={user.email} 
+      salary={user.salary} 
+      date={user.date} 
+      status={user.status}
+    />
   ));
 
   return <section className="employeeCards">{content}</section>;
