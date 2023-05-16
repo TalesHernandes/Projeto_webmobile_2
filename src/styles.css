@@ -120,7 +120,7 @@ header h1 {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .card {
@@ -131,6 +131,12 @@ header h1 {
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .superior {
@@ -176,4 +182,19 @@ header h1 {
 .edit {
   width: 30px;
   height: 30px;
+}
+
+.filter-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: 100 100 100px rgba(1, 1, 1, 1);
 }

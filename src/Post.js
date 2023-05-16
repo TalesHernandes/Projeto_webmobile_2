@@ -1,5 +1,5 @@
 export default function Post() {
-  const form = document.getElementById("employee-form");
+  const form = document.getElementById("employee-form-post");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -16,7 +16,7 @@ export default function Post() {
 
     console.log(jsonData);
 
-    fetch("https://mack-webmobile.vercel.app/api/users", {
+    fetch("https://mack-webmobile.vercel.app/api/users/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
