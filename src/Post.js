@@ -1,7 +1,7 @@
 export default function Post() {
   const form = document.getElementById("employee-form-post");
 
-  form.addEventListener("submit", (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
@@ -16,7 +16,7 @@ export default function Post() {
 
     console.log(jsonData);
 
-    fetch("https://mack-webmobile.vercel.app/api/users/", {
+    fetch("https://mack-webmobile.vercel.app/api/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -38,6 +38,11 @@ export default function Post() {
       .catch((error) => {
         console.error(error);
         alert("Post failed");
+      })
+      .finally(() => {
+         form.removeEventListener("submit", submitHandler);
       });
-  });
+  };
+
+  form.addEventListener("submit", submitHandler);
 }

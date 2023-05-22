@@ -5,9 +5,7 @@ import Put from "./Put";
 export default function Edit() {
     const location = useLocation();
     let { state } = location;
-    console.log(state);
     const _id = useLocation().state._id
-    console.log(_id);
     const [name, setName] = useState(state?.name || '');
     const [surname, setSurname] = useState(state?.surname || '');
     const [avatar, setAvatar] = useState(state?.avatar || '');
