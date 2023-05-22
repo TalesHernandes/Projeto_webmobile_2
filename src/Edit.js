@@ -3,15 +3,18 @@ import { Link, useLocation } from "react-router-dom"
 import Put from "./Put";
 
 export default function Edit() {
-    let { state } = useLocation();
-    console.log(useLocation().state)
-    const [name, setName] = useState(state.name);
-    const [surname, setSurname] = useState(state.surname);
-    const [avatar, setAvatar] = useState(state.avatar);
-    const [email, setEmail] = useState(state.email);
-    const [salary, setSalary] = useState(state.salary);
-    const [date, setDate] = useState(state.date);
-    const [status, setStatus] = useState(state.status);
+    const location = useLocation();
+    let { state } = location;
+    console.log(state);
+    const _id = useLocation().state._id
+    console.log(_id);
+    const [name, setName] = useState(state?.name || '');
+    const [surname, setSurname] = useState(state?.surname || '');
+    const [avatar, setAvatar] = useState(state?.avatar || '');
+    const [email, setEmail] = useState(state?.email || '');
+    const [salary, setSalary] = useState(state?.salary || '');
+    const [date, setDate] = useState(state?.date || '');
+    const [status, setStatus] = useState(state?.status || '');
   
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -37,9 +40,14 @@ export default function Edit() {
         setDate(e.target.value);
     }
     
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        Put({ ID: _id });
+    }
+    
     return (
         <>
-            <form id="employee-form-put">
+            <form id="employee-form-put" onSubmit={handleSubmit}>
                 <label htmlFor="name">Nome: </label>
                 <input type="text" id="name" name="name" value={name} onChange={handleNameChange}/>
                 <br />
@@ -71,7 +79,7 @@ export default function Edit() {
                 <input type="radio" id="inactive" name="status" value="Inactive" checked={status === 'Inactive'} onChange={() => setStatus('Inactive')} />
                 <br />
 
-                <button type="submit" onClick={() => Put(useState(state._id))}>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
             <Link to="/">Home</Link>
         </>

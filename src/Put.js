@@ -1,4 +1,5 @@
-export default function Put({_id}) {
+export default function Put({ID}) {
+    const _id = ID;
     const form = document.getElementById("employee-form-put");
 
     console.log("Passou no PUT, ID: "+ _id)
@@ -18,8 +19,8 @@ export default function Put({_id}) {
   
       console.log(jsonData);
   
-      fetch(`https://mack-webmobile.vercel.app/api/users/${_id}`, { // Modify API endpoint URL
-        method: "PUT", // Change HTTP method
+      fetch(`https://mack-webmobile.vercel.app/api/users/${_id}`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json"
         },
