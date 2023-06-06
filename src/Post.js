@@ -3,14 +3,17 @@ import ImageGenerator from "./ImageGenerator";
 export default function Post() {
     const form = document.getElementById("employee-form-post");
 
-    const submitHandler = (event) => {
-        event.preventDefault();
 
         const formData = new FormData(form);
         const jsonData = {};
 
         for (const [key, value] of formData.entries()) {
             jsonData[key] = value;
+        }
+
+        const statusInput = document.querySelector('input[name="rdo"]:checked');
+        if (statusInput) {
+            jsonData["status"] = statusInput.value;
         }
 
         jsonData["name"] = jsonData["name"] + " " + jsonData["surname"];
@@ -41,9 +44,6 @@ export default function Post() {
                 alert("Post falhou");
             })
             .finally(() => {
-                form.removeEventListener("submit", submitHandler);
             });
     };
 
-    form.addEventListener("submit", submitHandler);
-}

@@ -1,6 +1,5 @@
 export default function Put({ ID }) {
     const _id = ID;
-    console.log("Passou no PUT, ID: " + _id);
 
     const form = document.getElementById("employee-form-put");
     const formData = new FormData(form);
@@ -10,9 +9,13 @@ export default function Put({ ID }) {
         jsonData[key] = value;
     }
 
+    const statusInput = document.querySelector('input[name="rdo"]:checked');
+    if (statusInput) {
+        jsonData["status"] = statusInput.value;
+    }
+
     jsonData["name"] = jsonData["name"] + " " + jsonData["surname"];
     delete jsonData["surname"];
-    console.log("Passou do delete jsonData");
 
     fetch(`https://mack-webmobile.vercel.app/api/users/${_id}`, {
         method: "PUT",
@@ -31,7 +34,6 @@ export default function Put({ ID }) {
     })
     .then((data) => {
         console.log(data);
-        window.location.href = "/";
     })
     .catch((error) => {
         console.error(error);

@@ -43,7 +43,7 @@ export default function EmployeeCard({
                                 date: date,
                                 status: status,
                             }}>
-                            <img className="edit" src="edit-small.png" alt="edit" />
+                            <img className="editSmall" src="edit-small.png" alt="edit" />
                         </Link>
                     </section>
                 </Link>

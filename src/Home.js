@@ -47,30 +47,36 @@ export default function Home() {
                 {isFilterVisible && (
                 <div className="filter-container">
                     <h2>Filter by:</h2>
-                    <div className="filter-options">
-                        <label>
-                        <br />
-                            <input 
-                                type="radio"
-                                value="date"
-                                checked={filterType === 'date'}
-                                onChange={handleFilterTypeChange}
-                            />
-                            Date
+                    <br />
+                    <div className="filter-options wrapper">
+                        <input 
+                            type="radio"
+                            name="select"
+                            id="option-1"
+                            value="date"
+                            checked={filterType === 'date'}
+                            onChange={handleFilterTypeChange}
+                        />
+                        <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>Date</span>
                         </label>
-                        <br />
-                        <label>
-                            <input 
-                                type="radio"
-                                value="status"
-                                checked={filterType === 'status'}
-                                onChange={handleFilterTypeChange}
-                            />
-                            Status
+                        <input 
+                            type="radio"
+                            name="select"
+                            id="option-2"
+                            value="status"
+                            checked={filterType === 'status'}
+                            onChange={handleFilterTypeChange}
+                        />
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>Status</span>
                         </label>
                     </div>
                     { filterType === 'date' ?
                     <>
+                        <br />
                         <br />
                         <label htmlFor="date">Select Date:</label>
                         <br /><br />
@@ -78,9 +84,11 @@ export default function Home() {
                     </>
                     :
                     <>
-                    <br />
+                        <br />
+                        <br />
                         <label htmlFor="status">Select Status:</label>
-                        <br /><br />
+                        <br />
+                        <br />
                         <select id="status" name="status" value={selectedStatus} onChange={handleStatusChange}>
                             <option value="">All</option>
                             <option value="Active">Active</option>
@@ -89,8 +97,8 @@ export default function Home() {
                     </>
                     }
                 </div>
-              )}
-                  <MapCards searchValue={searchValue} selectedDate={selectedDate} selectedStatus={selectedStatus} />
+                )}
+                <MapCards searchValue={searchValue} selectedDate={selectedDate} selectedStatus={selectedStatus} />
             </section>
         </>
     );
