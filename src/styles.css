@@ -34,9 +34,7 @@ header {
   height: 98px;
   width: 100%;
   display: flex;
-  background-image: url(header.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 
 header h1 {

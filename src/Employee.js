@@ -1,9 +1,14 @@
 import { Link, useLocation } from "react-router-dom"
+import Delete from "./Delete";
 
 export default function Employee() {
     const { state } = useLocation();
     const _id = useLocation().state._id
     console.log({_id})
+
+    const handleClick = () => {
+        Delete(_id)
+    }
     return (
         <>
             <form id="employee-form-put">
@@ -39,6 +44,7 @@ export default function Employee() {
                 <br />
             </form>
             <Link to="/">Home</Link>
+            <button onClick={handleClick}>Deletar</button>
         </>
     )
 }

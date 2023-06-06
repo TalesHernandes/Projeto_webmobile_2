@@ -13,9 +13,7 @@ export default function Add() {
                 <input type="text" id="surname" name="surname" />
                 <br />
 
-                <label htmlFor="avatar">Avatar: </label>
-                <input type="text" id="avatar" name="avatar" />
-                <br />
+                <input type="hidden" id="avatar" name="avatar" />
 
                 <label htmlFor="email">E-mail: </label>
                 <input type="email" id="email" name="email" />
