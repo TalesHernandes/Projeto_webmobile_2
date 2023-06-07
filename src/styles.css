@@ -569,3 +569,807 @@ input[type="radio"]{
 #option-2:checked:checked ~ .option-2 span{
   color: #fff;
 }
+
+@media screen and (max-width: 380px) {
+  .filter-container {
+    height: 220px;
+  }
+
+  .managerPFP {
+    margin-left: 140px;
+  }
+
+  .buttons {
+    width: 100px;
+    margin-left: 45px;
+  }
+
+  .card {
+    width: 170px;
+  }
+
+  .inferior {
+    gap: 25px;
+  }
+
+  #addSwitch {
+    top: 59%;
+    width: 180px;
+    height: 30px;
+    left: 60%;
+  }
+
+  #addSubmitButton {
+    top: 62%;
+  }
+
+  .return {
+    margin-top: 10px;
+    margin-left: 225px;
+  }
+
+  .switch {
+    top: 79%;
+    width: 180px;
+    height: 30px;
+    left: 60%;
+  }
+
+  .buttonsContainer {
+    width: 99.2%;
+  }
+
+  .submitButton {
+    top: 82%;
+  }
+}
+
+@media screen and (min-height: 896px) {
+  .filter-container {
+    height: 220px;
+  }
+
+  .managerPFP {
+    margin-left: 180px;
+  }
+
+  .buttons {
+    width: 110px;
+    margin-left: 72px;
+  }
+
+  .card {
+    width: 190px;
+  }
+
+  .inferior {
+    gap: 45px;
+  }
+
+  #addSwitch {
+    top: 44%;
+    width: 196px;
+    height: 30px;
+    left: 58.3%;
+  }
+
+  #addSubmitButton {
+    top: 46%;
+  }
+
+  .return {
+    margin-top: 10px;
+    margin-left: 260px;
+  }
+
+  .switch {
+    top: 58.5%;
+    width: 196px;
+    height: 30px;
+    left: 58.3%;
+  }
+
+  .buttonsContainer {
+    width: 100%;
+  }
+
+  .submitButton {
+    top: 61%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 18.2%;
+    z-index: 0;
+  }
+
+  .managerPFP {
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    margin-left: 0;
+  }
+
+  .filters {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  .search {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 100%;
+  }
+  
+  .buttons a {
+    background-color: #1CD29B;
+  }
+
+  .buttons button {
+    background-color: #1CD29B;
+  }
+
+  .employeeCards {
+    position: absolute;
+    width: calc(100% - 18.2%);
+    left: 18.2%;
+    gap: 10px;
+  }
+
+  .filter-container {
+    width: 20%;
+    height: 35%;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 18.2%;
+    width: 50%;
+  }
+
+  #addFormsArticle {
+    width: 86%;
+  }
+
+  #formsArticle {
+    width: 86%
+  }
+
+  #addSwitch {
+    top: 75%;
+    left: 52.2%;
+    width: 180px;
+  }
+
+  #addSubmitButton {
+    top: 80%;
+    left: 9%;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .return {
+    position: absolute;
+    top: 69%;
+    left: 35.8%;
+  }
+
+  #editReturn {
+    top: 90.5%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 9%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 52.2%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 86%;
+  }
+
+  #employeeSwitch {
+    top: 91%;
+    left: 52.2%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 482px;
+    left: 55.2%;
+  }
+
+  .buttonsContainer {
+    margin-top: 482px;
+    margin-left: 31%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  .deleteButton {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1390px) {
+  header {
+    width: 16.5%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 16.5%);
+    left: 16.5%;
+    gap: 3px;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 16.5%;
+    width: 50%;
+  }
+
+  #addSwitch {
+    left: 50.6%;
+    width: 180px;
+  }
+
+  #addFormsArticle {
+    width: 88%;
+  }
+
+  .return {
+    top: 60%;
+    left: 37.8%;
+  }
+
+  #editReturn {
+    top: 80%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 9%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 51%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 88%;
+  }
+
+  #employeeSwitch {
+    top: 91%;
+    left: 50.8%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 482px;
+    left: 54.8%;
+  }
+
+  .buttonsContainer {
+    margin-top: 482px;
+    margin-left: 33.5%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 88%;
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  header {
+    width: 15%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 15%);
+    left: 15%;
+    gap: 8px;
+  }
+
+  .card {
+    width: 198px;
+  }
+
+  .inferior {
+    gap: 50px;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 15%;
+    width: 50%;
+  }
+
+  #addFormsArticle {
+    width: 89%;
+  }
+
+  #addSwitch {
+    left: 49.6%;
+    width: 180px;
+  }
+  
+  .return {
+    top: 55%;
+    left: 38.8%;
+  }
+
+  #editReturn {
+    top: 73%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 8%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 49.8%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 89%;
+  }
+
+  #employeeSwitch {
+    top: 91%;
+    left: 49.8%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 482px;
+    left: 54.2%;
+  }
+
+  .buttonsContainer {
+    margin-top: 482px;
+    margin-left: 35%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  header {
+    width: 13.3%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 13.3%);
+    left: 13.3%;
+    gap: 0px;
+  }
+
+  .filter-container {
+    width: 15%;
+    height: 25%;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 13.3%;
+    width: 50%;
+  }
+
+  .employeeArticle {
+    height: 370px;
+  }
+
+  #addFormsArticle {
+    width: 90%;
+  }
+
+  #addSwitch {
+    top: 75%;
+    left: 48.7%;
+    width: 180px;
+  }
+
+  #addSubmitButton {
+    top: 80%;
+    left: 7%;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  #employee-form-post input{
+    padding: 8px;
+    margin-top: -10px;
+  }
+  
+  .return {
+    position: absolute;
+    top: 50%;
+    left: 39.4%;
+  }
+
+  #editEmployeeArticle {
+    height: 505px;
+  }
+
+  #editReturn {
+    top: 67%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 7%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 49%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 90%;
+  }
+
+  #employeeSwitch {
+    top: 91%;
+    left: 49.8%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 482px;
+    left: 54.2%;
+  }
+
+  .buttonsContainer {
+    margin-top: 482px;
+    margin-left: 35%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 89%;
+  }
+
+  #formsArticle input{
+    padding: 8px;
+    margin-top: -10px;
+  }
+
+  #employeeSwitch {
+    top: 91%;
+    left: 48.8%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 490px;
+    left: 53.3%;
+  }
+
+  .buttonsContainer {
+    margin-top: 490px;
+    margin-left: 36%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 90%;
+  }
+
+  #eEmployeeArticle {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1920px){
+  header {
+    width: 12%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 12%);
+    left: 12%;
+    gap: 0px;
+  }
+
+  .buttons {
+    left: -8%;
+  }
+
+  .inferior {
+    gap: 50px;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 12%;
+    width: 50%;
+  }
+
+  #employee-form-put input{
+    padding: 8px;
+    margin-top: -10px;
+  }
+
+  #addFormsArticle {
+    width: 91%;
+  }
+
+  #addSwitch {
+    top: 75%;
+    left: 47.8%;
+    width: 180px;
+  }
+
+  .return {
+    position: absolute;
+    top: 44%;
+    left: 40.7%;
+  }
+
+  #editReturn {
+    top: 60%;
+    left: 39.5%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 7%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 47.8%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 91%;
+  }
+
+  #employeeSwitch {
+    top: 90%;
+    left: 47.7%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 490px;
+    left: 53%;
+  }
+
+  .buttonsContainer {
+    margin-top: 490px;
+    margin-left: 37.5%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 91%;
+  }
+
+  #eEmployeeArticle {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  header {
+    width: 11%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 11%);
+    left: 11%;
+    gap: 4px;
+  }
+
+  .card {
+    width: 210px;
+  }
+
+  .inferior {
+    gap: 60px;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 11%;
+    width: 50%;
+  }
+
+  #addSwitch {
+    top: 75%;
+    left: 47.2%;
+    width: 180px;
+  }
+
+  .return {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+  }
+
+  #editReturn {
+    top: 56%;
+    left: 39.5%;
+  }
+
+  .submitButton {
+    top: 85%;
+    left: 7%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 81%;
+    left: 47.2%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 92%;
+  }
+
+  #employeeSwitch {
+    top: 90%;
+    left: 47.3%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 490px;
+    left: 52.5%;
+  }
+
+  .buttonsContainer {
+    margin-top: 490px;
+    margin-left: 38%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 91%;
+  }
+
+  #eEmployeeArticle {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  header {
+    width: 10%;
+  }
+
+  .employeeCards {
+    width: calc(100% - 10%);
+    left: 10%;
+    gap: 7px;
+  }
+
+  .filter-container {
+    width: 12%;
+    height: 20%;
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 10%;
+    width: 50%;
+  }
+
+  #addFormsArticle {
+    width: 92%;
+  }
+
+  #addSwitch {
+    top: 72%;
+    left: 46.5%;
+    width: 180px;
+  }
+
+  .return {
+    position: absolute;
+    top: 37%;
+    left: 44.2%;
+  }
+
+  #editReturn {
+    top: 50%;
+    left: 40.9%;
+  }
+
+  .submitButton {
+    top: 83%;
+    left: 6%;
+    cursor: pointer;
+  }
+
+  .switch {
+    top: 79%;
+    left: 46.5%;
+    width: 180px;
+  }
+
+  #editFormsArticle {
+    width: 93%;
+  }
+
+  #employeeSwitch {
+    top: 89%;
+    left: 46.6%;
+    width: 180px;
+  }
+
+  #employeeReturn {
+    position: absolute;
+    top: 490px;
+    left: 52.2%;
+  }
+
+  .buttonsContainer {
+    margin-top: 490px;
+    margin-left: 39.5%;
+    width: 300px;
+    gap: 40px;
+  }
+
+  #formsArticle {
+    width: 91%;
+  }
+
+  #eEmployeeArticle {
+    height: 450px;
+  }
+}

@@ -16,7 +16,7 @@ export default function Employee() {
             <section className="container">
                 <Header />
                     <section className="formContainer">
-                        <article className="employeeArticle">
+                        <article className="employeeArticle" id="eEmployeeArticle">
                             <section className="miniHeader">
                                 <img src={state.avatar} alt="Employee avatar" />
                                 <p>{useState(state?.name || '')} {useState(state?.surname || '')}</p>
@@ -56,7 +56,7 @@ export default function Employee() {
                                     <label>Status: </label>
                                     <input type="radio" name="rdo" id="active" value="Active" checked={state.status === 'Active'} disabled />
                                     <input type="radio" name="rdo" id="inactive" value="Inactive" checked={state.status === 'Inactive'} disabled />
-                                    <div className="switch">
+                                    <div className="switch" id="employeeSwitch">
                                         <label htmlFor="active">Active</label>
                                         <label htmlFor="inactive">Inactive</label>
                                         <span></span>
@@ -82,7 +82,7 @@ export default function Employee() {
                         </Link>
                         <button className="deleteButton" onClick={handleClick}></button>
                         <Link to="/">
-                            <img className="return" src="return.png" alt="edit" />
+                            <img className="return" id="employeeReturn" src="return.png" alt="edit" />
                         </Link>
                     </section>
             </section>

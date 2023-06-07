@@ -53,7 +53,7 @@ export default function Edit() {
             <section className="container">
                 <Header />
                     <section className="formContainer">
-                        <article className="employeeArticle">
+                        <article className="employeeArticle" id="editEmployeeArticle">
                             <section className="miniHeader">
                                 <img src={state.avatar} alt="Employee avatar" />
                                 <p>{useState(state?.name || '')} {useState(state?.surname || '')}</p>
@@ -104,7 +104,7 @@ export default function Edit() {
                         </article>
                     </section>
                 <Link to="/">
-                    <img className="return" src="return.png" alt="edit" />
+                    <img className="return" id="editReturn" src="return.png" alt="edit" />
                 </Link>
             </section>
         </>
